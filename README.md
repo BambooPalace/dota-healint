@@ -2,14 +2,15 @@
 
 ## How to run docker containers (Mac)
 0. open Docker.app
-1. a) build docker image locally
+1. two ways of getting docker image<br>
+a) build docker image locally
 - clone git repo
 `git clone https://github.com/BambooPalace/dota-healint.git
 `
 - build docker image
 `docker build -t dota-healint .
 `
-1. b)  or pull from docker hub
+<br>b)  Or pull from docker hub
 `docker pull clairegong/dota-healint:latest
 `
 2. run container
@@ -30,19 +31,19 @@ optional parameters:
 * date: str, e.g. ‘2022-01-01’
 <br>
 example urls:
-* http://localhost:8000/players/1,161683666,%20268590680/leaderboard?date=2022-01-01
-* http://localhost:8000/players/1,161683666,%20268590680/leaderboard?month=1
-
+```
+http://localhost:8000/players/1,161683666,%20268590680/leaderboard?date=2022-01-01
+http://localhost:8000/players/1,161683666,%20268590680/leaderboard?month=1
+```
 
 
 2. Given one player_id, return a suggestion of a hero that the player should play based on the player's historical data. 
 <br>
 (If no history available return most picked heros in Dota. If pass random=1, then assign heros randomly )
 example url:
-* http://localhost:8000/players/1/hero
-* http://localhost:8000/players/161683666/hero
-* http://localhost:8000/players/161683666/hero?random=1
-
+`http://localhost:8000/players/1/hero`
+`http://localhost:8000/players/161683666/hero`
+`http://localhost:8000/players/161683666/hero?random=1`
 
 
 ## Comments
