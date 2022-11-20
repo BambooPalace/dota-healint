@@ -1,4 +1,4 @@
-from src.db import create_table, insert_values, query_db
+from dota.db import create_table, insert_values, query_db
 
 def test_create():
     create_table('test_table', ['id', 'value'])
