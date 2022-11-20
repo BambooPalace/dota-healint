@@ -58,7 +58,7 @@ As I am familar with using Flask with python, Flask is my first choice consideri
 
 Currently each call to my API is done by calling  Opendota API in the backend, which is slower. Ideally, we should have the database hosting related users tables e.g. users_win_rate_by_date, users_top_hero, which can be regularly updated by mass queries to Opendota. 
 
-I did plan to use sql database to save some queries results in db to speed up future queries for the same players, discard this idead due to time limit.
+I did plan to use sql database to save some queries results in db to speed up future queries for the same players, have to give this up due to time limit.
 
 3. How would you ensure data required for the application stays up to date?
 
